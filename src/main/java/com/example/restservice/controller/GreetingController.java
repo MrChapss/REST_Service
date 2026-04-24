@@ -1,10 +1,14 @@
 package com.example.restservice.controller;
 
+// service class which return in JSON form
 import com.example.restservice.service.Greeting;
+// to label the class as a controller
 import org.springframework.web.bind.annotation.RestController;
+// required to request to get the data
 import org.springframework.web.bind.annotation.GetMapping;
+// make the string as a query (for website to understand)
 import org.springframework.web.bind.annotation.RequestParam;
-
+// responsible for incrementing the id when requesting at the same controller
 import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
